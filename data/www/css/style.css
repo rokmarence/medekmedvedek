@@ -11870,6 +11870,11 @@ textarea.form-control-lg {
   background: #FEBB27;
 }
 
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .nav-item {
   color: #262626;
   font-size: small;
@@ -11878,6 +11883,171 @@ textarea.form-control-lg {
 .navbar-brand {
   width: 80px;
   height: auto;
+}
+
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-image: url("../slike/banner_ponudba.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.hero-banner .content {
+  position: relative;
+  z-index: 2;
+  margin-left: 90px;
+  color: white;
+}
+.hero-banner .content h1, .hero-banner .content .h1 {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+.hero-banner .content p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.hero-banner .content .line {
+  width: 380px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.card-grid {
+  display: flex;
+  gap: 170px;
+  padding: 80px;
+  justify-content: center;
+  font-family: sans-serif;
+}
+@media (max-width: 1000px) {
+  .card-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.card {
+  position: relative;
+  background: #fdbd33;
+  border-radius: 20px;
+  width: 670px;
+  height: 280px;
+  padding: 30px;
+  display: flex;
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+.card .content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card .content h2, .card .content .h2 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+.card .content p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 15px 0;
+}
+.card .footer-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+}
+.card .footer-card .price {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.card .footer-card .btn-order {
+  background: #222;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.card .footer-card .btn-order:hover {
+  opacity: 0.8;
+}
+.card .image-wrapper {
+  position: absolute;
+  right: -100px;
+  top: -110px;
+  width: 300px;
+}
+.card .image-wrapper img {
+  width: 100%;
+  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.2));
+}
+
+@media (max-width: 440px) {
+  .hero-banner {
+    height: 400px;
+    background-position: 70% center;
+  }
+  .hero-banner .content {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .hero-banner .content h1, .hero-banner .content .h1 {
+    font-size: 42px;
+  }
+  .hero-banner .content .line {
+    width: 100%;
+    max-width: 250px;
+  }
+  .card-grid {
+    padding: 20px;
+    gap: 80px;
+  }
+  .card {
+    width: 100%;
+    height: auto;
+    min-height: 350px;
+    flex-direction: column-reverse;
+    margin-top: 100px;
+    padding: 20px;
+  }
+  .card .content {
+    width: 100%;
+    text-align: center;
+  }
+  .card .content h2, .card .content .h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  .card .content p {
+    margin-bottom: 20px;
+  }
+  .card .footer-card {
+    padding-top: 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .card .footer-card .btn-order {
+    width: 100%;
+    text-align: center;
+  }
+  .card .image-wrapper {
+    position: absolute;
+    top: -100px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 200px;
+  }
+  .card .image-wrapper img {
+    filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.15));
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

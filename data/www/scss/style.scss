@@ -1,0 +1,25 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+//header
+
+.container-fluid {
+background:#FEBB27;
+
+}
+
+.nav-item {
+color: #262626;
+font-size: small;
+}
+
+.navbar-brand {
+  width: 80px; 
+  height: auto;
+}

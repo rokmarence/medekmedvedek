@@ -1,0 +1,95 @@
+@ -0,0 +1,94 @@
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+//header
+
+.container-fluid {
+background:#FEBB27;
+
+}
+
+.nav-item {
+color: #262626;
+font-size: small;
+}
+
+.navbar-brand {
+  width: 80px; 
+  height: auto;
+}
+
+//nasa zgodba
+
+.naslov {
+background-image:url("../slike/banner.jpg");
+padding-left: 20%;
+padding-top: 17%;
+min-height: 500px;
+color: white;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2{
+    font-size: 30px;
+    color:#262626;
+}
+
+h3{
+    font-size: 30px;
+    color:white;
+}
+
+h5 {
+    font-size: 15px;
+    text-decoration: underline;
+    text-underline-offset: 20px;
+}
+
+.beli_napis {
+    color:white;
+}
+
+.črni_napis{
+    color:#262626;
+}
+
+.rounded {
+    border: white;
+    border-radius: 20%;
+    border-width: 1%;
+}
+
+img.rounded{
+  width: 30%; /* 80% širine ekrana */
+  max-width: 100%; /* nikoli ne bo širša od ekrana */
+  height: auto; /* ohrani razmerje */
+}
+.PrviDel {  
+background:#FEBB27;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+
+}
+
+.DrugiDel{
+    background: #262626;
+    display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+}

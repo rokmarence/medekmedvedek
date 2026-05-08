@@ -11880,6 +11880,11 @@ textarea.form-control-lg {
   height: auto;
 }
 
+.navbar {
+  padding-bottom: 0%;
+  padding-top: 0%;
+}
+
 .naslov {
   background-image: url("../slike/banner.jpg");
   padding-left: 20%;

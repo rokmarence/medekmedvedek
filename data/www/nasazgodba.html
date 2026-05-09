@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naša zgodba - Medek Medvedek</title>
-    <!-- Bootstrap 5 CSS (prek tvojega kompajlanega SCSS ali CDN) -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Navigacija -->
-    <nav class="navbar navbar-expand-lg">
+    <!-- Glavni meni -->
+    <nav class="navbar navbar-expand-lg navigacija">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-                <img src="slike/logo 1.png" alt="Logo honey">
+                <img src="slike/logo 1.png" alt="Logo honey" class="logotip-glavni">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -29,147 +28,132 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="naslov d-flex align-items-center">
+    <!-- Zgornji del strani z naslovom -->
+    <header class="glava-strani d-flex align-items-center">
         <div class="container">
-            <h1 class="display-1 fw-normal">Naša zgodba</h1>
-            <h5>Od medu do medu</h5>
+            <h1 class="glavni-naslov">Naša zgodba</h1>
+            <h5 class="podnaslov">Od medu do medu</h5>
         </div>
     </header>
 
     <!-- Prvi del - Začetki -->
-    <section class="PrviDel">
+    <section class="sekcija-rumena">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5 mb-4 mb-lg-0">
-                    <div class="image-hexagon-container">
-                        <img src="slike/pexels-bab2056-12147261 1.png" class="img-fluid custom-rounded" alt="Čebelarjenje">
-                    </div>
+                    <img src="slike/pexels-bab2056-12147261 1.png" class="img-fluid slika-z-robom" alt="Čebelarjenje">
                 </div>
                 <div class="col-lg-7 ps-lg-5">
-                    <h2 class="fw-bold mb-4">Začetki</h2>
-                    <p class="črni_napis">Naša zgodba se je začela preprosto z nekaj panji, veliko radovednosti in spoštovanjem do narave. Kar je sprva bil hobi, je sčasoma preraslo v predanost čebelarstvu in željo ustvarjati med, ki ohranja svojo pristnost...</p>
+                    <h2 class="naslov-sekcije">Začetki</h2>
+                    <p class="besedilo-crno">Naša zgodba se je začela preprosto z nekaj panji, veliko radovednosti in spoštovanjem do narave. Kar je sprva bil hobi, je sčasoma preraslo v predanost čebelarstvu in željo ustvarjati med, ki ohranja svojo pristnost...</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Drugi del - Danes -->
-    <section class="DrugiDel text-white">
+    <section class="sekcija-temna text-white">
         <div class="container">
             <div class="row align-items-center flex-lg-row-reverse">
                 <div class="col-lg-5 mb-4 mb-lg-0">
-                    <img src="slike/pexels-kkwritesofficial-14489206 1.png" class="img-fluid custom-rounded border border-white border-4" alt="Med danes">
+                    <img src="slike/pexels-kkwritesofficial-14489206 1.png" class="img-fluid slika-z-robom" alt="Med danes">
                 </div>
                 <div class="col-lg-7 pe-lg-5">
-                    <h3 class="fw-bold mb-4">Danes</h3>
-                    <p class="beli_napis">Danes Medek Medvedek predstavlja kakovosten med, ki nastaja z dolgoletnim znanjem, izkušnjami in predanim delom. Vsak kozarec je rezultat skrbnega odnosa do čebel in narave, kjer nič ni prepuščeno naključju...</p>
+                    <h3 class="naslov-sekcije">Danes</h3>
+                    <p class="besedilo-belo">Danes Medek Medvedek predstavlja kakovosten med, ki nastaja z dolgoletnim znanjem, izkušnjami in predanim delom. Vsak kozarec je rezultat skrbnega odnosa do čebel in narave, kjer nič ni prepuščeno naključju...</p>
                 </div>
             </div>
         </div>
     </section>
 
-<section class="testimonialsi py-5">
-    <div class="container">
-        <h2 class="text-center mb-5 display-5 fw-bold">Testimonials</h2>
-        
-        <div class="row g-4 justify-content-center">
-            <!-- Kartica 1: Armanda -->
-            <div class="col-md-4">
-                <div class="testimonial-card">
-                    <p class="quote">“I discovered Medek Medvedek while traveling through Slovenia. The honey tastes incredibly pure, unlike anything I’ve tried before. You can really feel the care and passion behind it. I even brought some home as a souvenir.”</p>
-                    <div class="author-info">
-                        <div class="hexagon-img">
-                            <img src="slike/armanda.jpg" alt="Armanda Kunova">
-                        </div>
-                        <div class="text">
-                            <h6 class="name">Armanda Kunova</h6>
-                            <p class="location">Russia</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Kartica 2: Matej -->
-            <div class="col-md-4">
-                <div class="testimonial-card">
-                    <p class="quote">“Medek Medvedek je res nekaj posebnega. Okus medu je izjemen in vidi se, da je pridelan z veliko skrbjo. Odkar sem ga poskusil, drugega medu skoraj ne kupujem več.”</p>
-                    <div class="author-info">
-                        <div class="hexagon-img">
-                            <img src="slike/matej.jpg" alt="Matej Kovač">
-                        </div>
-                        <div class="text">
-                            <h6 class="name">Matej Kovač</h6>
-                            <p class="location">Slovenia</p>
+<!--testimonialsi-->
+    <section class="mnenja-strank py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 naslov-mnenja">Testimonials</h2>
+            <div class="row g-4 justify-content-center">
+                <!-- Kartica 1 -->
+                <div class="col-md-4"> 
+                    <div class="kartica-mnenja">
+                        <p class="citat">“I discovered Medek Medvedek while traveling through Slovenia. The honey tastes incredibly pure, unlike anything I’ve tried before. You can really feel the care and passion behind it. I even brought some home as a souvenir.”</p>
+                        <div class="avtor-podatki">
+                            <div class="slika-sestkotnik">
+                                <img src="slike/armanda.png" alt="Armanda Kunova">
+                            </div>
+                            <div class="avtor-tekst">
+                                <h6 class="ime-stranke">Armanda Kunova</h6>
+                                <p class="drzava">Russia</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Kartica 3: Petra -->
-            <div class="col-md-4">
-                <div class="testimonial-card">
-                    <p class="quote">“Že dolgo nisem poskusil tako kakovostnega medu. Razlika v okusu je očitna takoj. Kupujem ga redno, ker vem, da dobim naraven in vrhunski izdelek.”</p>
-                    <div class="author-info">
-                        <div class="hexagon-img">
-                            <img src="slike/petra.jpg" alt="Petra Novak">
+                <!-- Kartica 2 -->
+                <div class="col-md-4"> 
+                    <div class="kartica-mnenja">
+                        <p class="citat">“Medek Medvedek je res nekaj posebnega. Okus medu je izjemen in vidi se, da je pridelan z veliko skrbjo. Odkar sem ga poskusil, drugega medu skoraj ne kupujem več.”</p>
+                        <div class="avtor-podatki">
+                            <div class="slika-sestkotnik">
+                                <img src="slike/matej.png" alt="Matej Kovač">
+                            </div>
+                            <div class="avtor-tekst">
+                                <h6 class="ime-stranke">Matej Kovač</h6>
+                                <p class="drzava">Slovenia</p>
+                            </div>
                         </div>
-                        <div class="text">
-                            <h6 class="name">Petra Novak</h6>
-                            <p class="location">Slovenia</p>
+                    </div>
+                </div>
+                <!-- Kartica 3 -->
+                <div class="col-md-4"> 
+                    <div class="kartica-mnenja">
+                        <p class="citat">“Že dolgo nisem poskusil tako kakovostnega medu. Razlika v okusu je očitna takoj. Kupujem ga redno, ker vem, da dobim naraven in vrhunski izdelek.”</p>
+                        <div class="avtor-podatki">
+                            <div class="slika-sestkotnik">
+                                <img src="slike/petra.jpg" alt="Petra Novak">
+                            </div>
+                            <div class="avtor-tekst">
+                                <h6 class="ime-stranke">Petra Novak</h6>
+                                <p class="drzava">Slovenia</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-    <footer class="main-footer">
-    <div class="container py-5">
-        <!-- Naslov ostane centriran -->
-        <h2 class="made-in-sl-title text-center mb-5">Narejen v Sloveniji</h2>
-        
-        <!-- Vrstica z vsebino, ki jo bomo s paddingom potisnili proti sredini -->
-        <div class="row footer-content-wrapper align-items-center">
-            
-            <!-- Leva stran: Navigacija -->
-            <div class="col-md-4 text-md-start mb-4 mb-md-0 ps-md-5">
-                <ul class="footer-links list-unstyled m-0">
-                    <li><a href="index.html">DOMOV</a></li>
-                    <li><a href="nasazgodba.html">NAŠA ZGODBA</a></li>
-                    <li><a href="ponudba.html">PONUDBA</a></li>
-                    <li><a href="kontakt.html">KONTAKT</a></li>
-                </ul>
-            </div>
-
-            <!-- Sredina: Logo in Jezik -->
-            <div class="col-md-4 text-center mb-4 mb-md-0">
-                <div class="d-flex flex-column align-items-center">
-                    <img src="slike/logo 1.png" alt="Honey Logo" class="footer-logo mb-3">
-                    <div class="language-switcher">
-                        <a href="#" class="lang-btn active">Slovenščina</a>
-                        <a href="#" class="lang-btn">English</a>
+    <!-- Noga strani -->
+    <footer class="noga-rumena">
+        <div class="container py-5">
+            <h2 class="noga-glavni-napis text-center mb-5">Narejen v Sloveniji</h2>
+            <div class="row noga-vsebina-ovitek g-4">
+                <div class="col-md-4 d-flex flex-column align-items-center align-items-md-start ps-md-5">
+                    <ul class="noga-povezave list-unstyled m-0 text-center text-md-start">
+                        <li><a href="index.html">DOMOV</a></li>
+                        <li><a href="nasazgodba.html">NAŠA ZGODBA</a></li>
+                        <li><a href="ponudba.html">PONUDBA</a></li>
+                        <li><a href="kontakt.html">KONTAKT</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 d-flex flex-column align-items-center justify-content-center">
+                    <img src="slike/logo 1.png" alt="Honey Logo" class="noga-logo mb-3">
+                    <div class="izbira-jezika">
+                        <a href="#" class="gumb-jezik active">Slovenščina</a>
+                        <a href="#" class="gumb-jezik">English</a>
                     </div>
                 </div>
-            </div>
-
-            <!-- Desna stran: Pravne zadeve -->
-            <div class="col-md-4 text-md-end pe-md-5">
-                <ul class="footer-links list-unstyled m-0">
-                    <li><a href="#">Politika zasebnosti</a></li>
-                    <li><a href="#">Piškotki</a></li>
-                    <li><a href="#">Sodelovanje</a></li>
-                </ul>
+                <div class="col-md-4 d-flex flex-column align-items-center align-items-md-end pe-md-5">
+                    <ul class="noga-povezave list-unstyled m-0 text-center text-md-end">
+                        <li><a href="#">Politika zasebnosti</a></li>
+                        <li><a href="#">Piškotki</a></li>
+                        <li><a href="#">Sodelovanje</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
+    </footer>
+
+    <div class="spodnji-sivi-trak text-white text-center py-3">
+        <small>&copy; Medek Medvedek</small>
     </div>
-</footer>
-
-
-<div class="copyright-bar text-white text-center py-3">
-    <small>&copy; Medek Medvedek</small>
-</div>
 
 </body>
 </html>

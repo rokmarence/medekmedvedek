@@ -1,100 +1,197 @@
-
-
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+$brand-yellow: #FEBB27;
+$brand-dark: #262626;
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-//header
-
-.container-fluid {
-background:#FEBB27;
-
-}
-
-.nav-item {
-color: #262626;
-font-size: small;
-}
-
-.navbar-brand {
-  width: 80px; 
-  height: auto;
-}
-
+// Navigacija brez robov
 .navbar {
-  padding-bottom: 0%;
-  padding-top: 0%;
+    background-color: $brand-yellow !important;
+    padding: 0;
+    
+    .nav-link {
+        color: $brand-dark !important;
+        font-weight: 500;
+        padding: 1.5rem 1rem !important;
+        &:hover { opacity: 0.7; }
+    }
+    
+    .navbar-brand img {
+        height: 60px;
+        width: auto;
+    }
 }
 
-//nasa zgodba
-
+// Hero banner
 .naslov {
-background-image:url("../slike/banner.jpg");
-padding-left: 20%;
-padding-top: 17%;
-min-height: 500px;
-max-width: 100%;
-color: white;
-font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../slike/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+    color: white;
+
+    h1 {
+        font-size: clamp(3rem, 8vw, 6rem);
+        border-bottom: 2px solid white;
+        display: inline-block;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    h5 {
+        text-decoration: none;
+        letter-spacing: 2px;
+    }
 }
 
-h1 {
-    font-size: 60px;
+// Sekcije z vsebino
+.PrviDel {
+    background-color: $brand-yellow;
+    padding: 80px 0;
 }
 
-h2{
-    font-size: 30px;
-    color:#262626;
+.DrugiDel {
+    background-color: $brand-dark;
+    padding: 80px 0;
 }
 
-h3{
-    font-size: 30px;
-    color:white;
+// Slike z belim robom in zaobljenostjo
+.custom-rounded {
+    border-radius: 15px;
+    border: 8px solid white;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
 
-h5 {
-    font-size: 15px;
-    text-decoration: underline;
-    text-underline-offset: 20px;
+
+.main-footer {
+  background-color: $brand-yellow;
+  border: none; // Prepričaj se, da ni robov
+
+  .made-in-sl-title {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; // Bolj igriva pisava kot na sliki
+    font-weight: bold;
+    font-size: 2.8rem; // Zmanjšana pisava
+    color: $brand-dark;
+  }
+
+  .footer-logo {
+    height: 50px;
+    width: auto;
+  }
+
+  .footer-links {
+    li a {
+      text-decoration: none;
+      color: $brand-dark;
+      font-size: 0.85rem; // Manjša pisava za povezave
+      font-weight: 500;
+      line-height: 2;
+      transition: opacity 0.2s;
+      
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  // Gumbi za jezike (črno-rumen preklop)
+  .language-switcher {
+    border: 1px solid $brand-dark;
+    border-radius: 8px;
+    overflow: hidden;
+
+    .lang-btn {
+      text-decoration: none;
+      font-size: 0.75rem;
+      padding: 5px 15px;
+      color: $brand-dark;
+      font-weight: bold;
+
+      &.active {
+        background-color: $brand-dark;
+        color: $brand-yellow;
+      }
+      
+      &:not(.active):hover {
+        background-color: rgba(0,0,0,0.05);
+      }
+    }
+  }
 }
 
-.beli_napis {
-    color:white;
+.copyright-bar {
+  background-color: $brand-dark;
+  color: #ffffff;
+  width: 100%;
+  clear: both;         // KLJUČNO: Prepreči, da bi se element "skril" pod plavajoče elemente
+  position: relative;
+  z-index: 10;         // Postavi ga "nad" morebitne sence ali robove
+  display: block;      // Prepričaj se, da se obnaša kot blok
 }
 
-.črni_napis{
-    color:#262626;
-}
 
-.rounded {
-    border: white;
-    border-radius: 20%;
-    border-width: 1%;
-}
 
-img.rounded{
-  width: 30%; /* 80% širine ekrana */
-  max-width: 100%; /* nikoli ne bo širša od ekrana */
-  height: auto; /* ohrani razmerje */
-}
-.PrviDel {  
-background:#FEBB27;
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  padding: 40px;
+.testimonialsi {
+    background-color: #fff;
+    
+    .testimonial-card {
+        background: #fff;
+        border-radius: 30px; // Zelo zaobljeni robovi kot na sliki
+        padding: 40px 30px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); // Nežna senca
+        transition: transform 0.3s ease;
 
-}
+        &:hover {
+            transform: translateY(-5px);
+        }
 
-.DrugiDel{
-    background: #262626;
-    display: flex;
-  align-items: center;
-  gap: 30px;
-  padding: 40px;
+        .quote {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #444;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .author-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            .hexagon-img {
+                width: 60px;
+                height: 60px;
+                background-color: #eee; // Nadomestno ozadje
+                // Ustvari šesterokotnik
+                clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+                
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .text {
+                .name {
+                    margin: 0;
+                    font-weight: 800;
+                    font-size: 1.1rem;
+                    color: #000;
+                }
+                .location {
+                    margin: 0;
+                    font-size: 0.85rem;
+                    color: #777;
+                }
+            }
+        }
+    }
 }

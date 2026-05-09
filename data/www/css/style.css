@@ -11860,95 +11860,167 @@ textarea.form-control-lg {
   }
 }
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-  background: #FEBB27;
-}
-
-.nav-item {
-  color: #262626;
-  font-size: small;
-}
-
-.navbar-brand {
-  width: 80px;
-  height: auto;
-}
-
 .navbar {
-  padding-bottom: 0%;
-  padding-top: 0%;
+  background-color: #FEBB27 !important;
+  padding: 0;
+}
+.navbar .nav-link {
+  color: #262626 !important;
+  font-weight: 500;
+  padding: 1.5rem 1rem !important;
+}
+.navbar .nav-link:hover {
+  opacity: 0.7;
+}
+.navbar .navbar-brand img {
+  height: 60px;
+  width: auto;
 }
 
 .naslov {
-  background-image: url("../slike/banner.jpg");
-  padding-left: 20%;
-  padding-top: 17%;
-  min-height: 500px;
-  max-width: 100%;
-  color: white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-h1, .h1 {
-  font-size: 60px;
-}
-
-h2, .h2 {
-  font-size: 30px;
-  color: #262626;
-}
-
-h3, .h3 {
-  font-size: 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../slike/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 60vh;
   color: white;
 }
-
-h5, .h5 {
-  font-size: 15px;
-  text-decoration: underline;
-  text-underline-offset: 20px;
+.naslov h1, .naslov .h1 {
+  font-size: clamp(3rem, 8vw, 6rem);
+  border-bottom: 2px solid white;
+  display: inline-block;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
-
-.beli_napis {
-  color: white;
-}
-
-.črni_napis {
-  color: #262626;
-}
-
-.rounded {
-  border: white;
-  border-radius: 20%;
-  border-width: 1%;
-}
-
-img.rounded {
-  width: 30%; /* 80% širine ekrana */
-  max-width: 100%; /* nikoli ne bo širša od ekrana */
-  height: auto; /* ohrani razmerje */
+.naslov h5, .naslov .h5 {
+  text-decoration: none;
+  letter-spacing: 2px;
 }
 
 .PrviDel {
-  background: #FEBB27;
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  padding: 40px;
+  background-color: #FEBB27;
+  padding: 80px 0;
 }
 
 .DrugiDel {
-  background: #262626;
+  background-color: #262626;
+  padding: 80px 0;
+}
+
+.custom-rounded {
+  border-radius: 15px;
+  border: 8px solid white;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.main-footer {
+  background-color: #FEBB27;
+  border: none;
+}
+.main-footer .made-in-sl-title {
+  font-family: "Comic Sans MS", "Segoe Print", cursive;
+  font-weight: bold;
+  font-size: 2.8rem;
+  color: #262626;
+}
+.main-footer .footer-logo {
+  height: 50px;
+  width: auto;
+}
+.main-footer .footer-links li a {
+  text-decoration: none;
+  color: #262626;
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 2;
+  transition: opacity 0.2s;
+}
+.main-footer .footer-links li a:hover {
+  opacity: 0.6;
+}
+.main-footer .language-switcher {
+  border: 1px solid #262626;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.main-footer .language-switcher .lang-btn {
+  text-decoration: none;
+  font-size: 0.75rem;
+  padding: 5px 15px;
+  color: #262626;
+  font-weight: bold;
+}
+.main-footer .language-switcher .lang-btn.active {
+  background-color: #262626;
+  color: #FEBB27;
+}
+.main-footer .language-switcher .lang-btn:not(.active):hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.copyright-bar {
+  background-color: #262626;
+  color: #ffffff;
+  width: 100%;
+  clear: both;
+  position: relative;
+  z-index: 10;
+  display: block;
+}
+
+.testimonialsi {
+  background-color: #fff;
+}
+.testimonialsi .testimonial-card {
+  background: #fff;
+  border-radius: 30px;
+  padding: 40px 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+.testimonialsi .testimonial-card:hover {
+  transform: translateY(-5px);
+}
+.testimonialsi .testimonial-card .quote {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+.testimonialsi .testimonial-card .author-info {
   display: flex;
   align-items: center;
-  gap: 30px;
-  padding: 40px;
+  gap: 15px;
+}
+.testimonialsi .testimonial-card .author-info .hexagon-img {
+  width: 60px;
+  height: 60px;
+  background-color: #eee;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+.testimonialsi .testimonial-card .author-info .hexagon-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.testimonialsi .testimonial-card .author-info .text .name {
+  margin: 0;
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: #000;
+}
+.testimonialsi .testimonial-card .author-info .text .location {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #777;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,64 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sl">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naša zgodba</title>
+    <title>Naša zgodba - Medek Medvedek</title>
+    <!-- Bootstrap 5 CSS (prek tvojega kompajlanega SCSS ali CDN) -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html"><img src="slike/logo 1.png" alt="Logo honey"></a>
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">DOMOV</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="nasazgodba.html">NAŠA ZGODBA</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="ponudba.html">PONUDBA</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="kontakt.html">KONTAKT</a>
-        </li>
-        </ul>
+    <!-- Navigacija -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="slike/logo 1.png" alt="Logo honey">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">DOMOV</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="nasazgodba.html">NAŠA ZGODBA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ponudba.html">PONUDBA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontakt.html">KONTAKT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="naslov d-flex align-items-center">
+        <div class="container">
+            <h1 class="display-1 fw-normal">Naša zgodba</h1>
+            <h5>Od medu do medu</h5>
+        </div>
+    </header>
+
+    <!-- Prvi del - Začetki -->
+    <section class="PrviDel">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="image-hexagon-container">
+                        <img src="slike/pexels-bab2056-12147261 1.png" class="img-fluid custom-rounded" alt="Čebelarjenje">
+                    </div>
+                </div>
+                <div class="col-lg-7 ps-lg-5">
+                    <h2 class="fw-bold mb-4">Začetki</h2>
+                    <p class="črni_napis">Naša zgodba se je začela preprosto z nekaj panji, veliko radovednosti in spoštovanjem do narave. Kar je sprva bil hobi, je sčasoma preraslo v predanost čebelarstvu in željo ustvarjati med, ki ohranja svojo pristnost...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Drugi del - Danes -->
+    <section class="DrugiDel text-white">
+        <div class="container">
+            <div class="row align-items-center flex-lg-row-reverse">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <img src="slike/pexels-kkwritesofficial-14489206 1.png" class="img-fluid custom-rounded border border-white border-4" alt="Med danes">
+                </div>
+                <div class="col-lg-7 pe-lg-5">
+                    <h3 class="fw-bold mb-4">Danes</h3>
+                    <p class="beli_napis">Danes Medek Medvedek predstavlja kakovosten med, ki nastaja z dolgoletnim znanjem, izkušnjami in predanim delom. Vsak kozarec je rezultat skrbnega odnosa do čebel in narave, kjer nič ni prepuščeno naključju...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="testimonialsi py-5">
+    <div class="container">
+        <h2 class="text-center mb-5 display-5 fw-bold">Testimonials</h2>
+        
+        <div class="row g-4 justify-content-center">
+            <!-- Kartica 1: Armanda -->
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <p class="quote">“I discovered Medek Medvedek while traveling through Slovenia. The honey tastes incredibly pure, unlike anything I’ve tried before. You can really feel the care and passion behind it. I even brought some home as a souvenir.”</p>
+                    <div class="author-info">
+                        <div class="hexagon-img">
+                            <img src="slike/armanda.jpg" alt="Armanda Kunova">
+                        </div>
+                        <div class="text">
+                            <h6 class="name">Armanda Kunova</h6>
+                            <p class="location">Russia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kartica 2: Matej -->
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <p class="quote">“Medek Medvedek je res nekaj posebnega. Okus medu je izjemen in vidi se, da je pridelan z veliko skrbjo. Odkar sem ga poskusil, drugega medu skoraj ne kupujem več.”</p>
+                    <div class="author-info">
+                        <div class="hexagon-img">
+                            <img src="slike/matej.jpg" alt="Matej Kovač">
+                        </div>
+                        <div class="text">
+                            <h6 class="name">Matej Kovač</h6>
+                            <p class="location">Slovenia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kartica 3: Petra -->
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <p class="quote">“Že dolgo nisem poskusil tako kakovostnega medu. Razlika v okusu je očitna takoj. Kupujem ga redno, ker vem, da dobim naraven in vrhunski izdelek.”</p>
+                    <div class="author-info">
+                        <div class="hexagon-img">
+                            <img src="slike/petra.jpg" alt="Petra Novak">
+                        </div>
+                        <div class="text">
+                            <h6 class="name">Petra Novak</h6>
+                            <p class="location">Slovenia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </nav>
+</section>
 
+    <footer class="main-footer">
+    <div class="container py-5">
+        <!-- Naslov ostane centriran -->
+        <h2 class="made-in-sl-title text-center mb-5">Narejen v Sloveniji</h2>
+        
+        <!-- Vrstica z vsebino, ki jo bomo s paddingom potisnili proti sredini -->
+        <div class="row footer-content-wrapper align-items-center">
+            
+            <!-- Leva stran: Navigacija -->
+            <div class="col-md-4 text-md-start mb-4 mb-md-0 ps-md-5">
+                <ul class="footer-links list-unstyled m-0">
+                    <li><a href="index.html">DOMOV</a></li>
+                    <li><a href="nasazgodba.html">NAŠA ZGODBA</a></li>
+                    <li><a href="ponudba.html">PONUDBA</a></li>
+                    <li><a href="kontakt.html">KONTAKT</a></li>
+                </ul>
+            </div>
 
-    <div class="naslov">
- <h1>Naša zgodba</h1>
- <h5>Od medu do medu</h5>
+            <!-- Sredina: Logo in Jezik -->
+            <div class="col-md-4 text-center mb-4 mb-md-0">
+                <div class="d-flex flex-column align-items-center">
+                    <img src="slike/logo 1.png" alt="Honey Logo" class="footer-logo mb-3">
+                    <div class="language-switcher">
+                        <a href="#" class="lang-btn active">Slovenščina</a>
+                        <a href="#" class="lang-btn">English</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desna stran: Pravne zadeve -->
+            <div class="col-md-4 text-md-end pe-md-5">
+                <ul class="footer-links list-unstyled m-0">
+                    <li><a href="#">Politika zasebnosti</a></li>
+                    <li><a href="#">Piškotki</a></li>
+                    <li><a href="#">Sodelovanje</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
+</footer>
 
-<div class="PrviDel">
-  <img src="slike/pexels-bab2056-12147261 1.png" class="rounded" alt="slika medu 1">
-  
-  <div class="besedilo">
-    <h2>Začetki</h2>
-    <p class="črni_napis">Naša zgodba se je začela preprosto z nekaj panji, veliko radovednosti in spoštovanjem do narave. Kar je sprva bil hobi, je sčasoma preraslo v predanost čebelarstvu in željo ustvarjati med, ki ohranja svojo pristnost.
-Verjamemo, da dober med ne nastane na hitro. Naše čebele nabirajo nektar v neokrnjeni naravi, stran od industrije in onesnaženja. Vsak kozarec je rezultat skrbnega dela, potrpežljivosti in naravnih procesov, ki jih ne pospešujemo. Pri delu sledimo preprostim načelom minimalna obdelava, brez nepotrebnih dodatkov in spoštovanje do čebel. Med točimo ročno in ga pustimo takšnega, kot ga ustvarijo čebele polnega okusa in značaja. Naš cilj ni množična proizvodnja, temveč kakovost. Želimo, da vsak, ki poskusi naš med, začuti razliko ne le v okusu, ampak tudi v zgodbi, ki stoji za njim. Hvala, ker podpirate lokalno in izbirate naravno.</p>
-  </div>
-</div>
 
-<div class="DrugiDel">  
-  <div class="besedilo">
-    <h3>Danes</h3>
-    <p class="beli_napis">Danes Medek Medvedek predstavlja kakovosten med, ki nastaja z dolgoletnim znanjem, izkušnjami in predanim delom. Vsak kozarec je rezultat skrbnega odnosa do čebel in narave, kjer nič ni prepuščeno naključju. Verjamemo v naravno pridelavo, čistost in pristnost, zato ohranjamo tradicionalne načine čebelarjenja. Svoje znanje z veseljem delimo z drugimi ter obiskovalcem približamo svet čebel, od prvega poleta do končnega izdelka. Naš cilj je ponuditi med, ki ni le izdelek, ampak zgodba narave, zdravja in predanosti.</p>
-  </div>
-  <img src="slike/pexels-kkwritesofficial-14489206 1.png" class="rounded" alt="slika medu 2">
-</div>
-
-<div class="testimonialsi">
-
-Testimonialsi
-
+<div class="copyright-bar text-white text-center py-3">
+    <small>&copy; Medek Medvedek</small>
 </div>
 
 </body>
-<footer>kopiraj kodo</footer>
 </html>

@@ -1,197 +1,218 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-$brand-yellow: #FEBB27;
-$brand-dark: #262626;
+// Barve, ki jih skoz uporabljamo
+$rumena: #FEBB27;
+$temna: #262626;
 
+// Osnovne stvari za celo stran
 * {
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-// Navigacija brez robov
-.navbar {
-    background-color: $brand-yellow !important;
+// Meni zgoraj
+.navigacija {
+    background-color: $rumena !important;
     padding: 0;
-    
-    .nav-link {
-        color: $brand-dark !important;
-        font-weight: 500;
-        padding: 1.5rem 1rem !important;
-        &:hover { opacity: 0.7; }
-    }
-    
-    .navbar-brand img {
-        height: 60px;
-        width: auto;
-    }
 }
 
-// Hero banner
-.naslov {
+.navigacija .nav-link {
+    color: $temna !important;
+    font-weight: 500;
+    padding: 1.5rem 1rem !important;
+}
+
+.navigacija .nav-link:hover {
+    opacity: 0.7;
+}
+
+.logotip-glavni {
+    height: 60px;
+    width: auto;
+}
+
+// Banner na vrhu
+.glava-strani {
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../slike/banner.jpg");
     background-size: cover;
     background-position: center;
     min-height: 60vh;
     color: white;
-
-    h1 {
-        font-size: clamp(3rem, 8vw, 6rem);
-        border-bottom: 2px solid white;
-        display: inline-block;
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-    }
-    h5 {
-        text-decoration: none;
-        letter-spacing: 2px;
-    }
 }
 
-// Sekcije z vsebino
-.PrviDel {
-    background-color: $brand-yellow;
+.glavni-naslov {
+    font-size: clamp(3rem, 8vw, 6rem);
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.podnaslov {
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+// Barvni bloki za vsebino
+.sekcija-rumena {
+    background-color: $rumena;
     padding: 80px 0;
 }
 
-.DrugiDel {
-    background-color: $brand-dark;
+.sekcija-temna {
+    background-color: $temna;
     padding: 80px 0;
 }
 
-// Slike z belim robom in zaobljenostjo
-.custom-rounded {
+// Stil za slike (zaobljeni robovi in beli okvir)
+.slika-z-robom {
     border-radius: 15px;
     border: 8px solid white;
     box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
 
-
-.main-footer {
-  background-color: $brand-yellow;
-  border: none; // Prepričaj se, da ni robov
-
-  .made-in-sl-title {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; // Bolj igriva pisava kot na sliki
+.naslov-sekcije {
     font-weight: bold;
-    font-size: 2.8rem; // Zmanjšana pisava
-    color: $brand-dark;
-  }
+    margin-bottom: 1.5rem;
+}
 
-  .footer-logo {
+// Mnenja strank (Testimonials)
+.mnenja-strank {
+    background-color: #fff;
+}
+
+.naslov-mnenja {
+    font-weight: bold;
+}
+
+.kartica-mnenja {
+    background: #fff;
+    border-radius: 30px;
+    padding: 40px 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.kartica-mnenja:hover {
+    transform: translateY(-5px);
+}
+
+.citat {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #444;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.avtor-podatki {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.slika-sestkotnik {
+    width: 60px;
+    height: 60px;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.slika-sestkotnik img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ime-stranke {
+    margin: 0;
+    font-weight: 800;
+}
+
+.drzava {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #777;
+}
+
+// Noga strani (Footer)
+.noga-rumena {
+    background-color: $rumena;
+}
+
+.noga-glavni-napis {
+    font-weight: bold;
+    font-size: 2.8rem;
+    color: $temna;
+}
+
+.noga-logo {
     height: 50px;
-    width: auto;
-  }
+}
 
-  .footer-links {
-    li a {
-      text-decoration: none;
-      color: $brand-dark;
-      font-size: 0.85rem; // Manjša pisava za povezave
-      font-weight: 500;
-      line-height: 2;
-      transition: opacity 0.2s;
-      
-      &:hover {
-        opacity: 0.6;
-      }
-    }
-  }
+.noga-povezave li a {
+    text-decoration: none;
+    color: $temna;
+    font-size: 0.85rem;
+    font-weight: 500;
+    line-height: 2;
+}
 
-  // Gumbi za jezike (črno-rumen preklop)
-  .language-switcher {
-    border: 1px solid $brand-dark;
+.noga-povezave li a:hover {
+    opacity: 0.6;
+}
+
+// Preklop jezika v nogi
+.izbira-jezika {
+    border: 1px solid $temna;
     border-radius: 8px;
     overflow: hidden;
-
-    .lang-btn {
-      text-decoration: none;
-      font-size: 0.75rem;
-      padding: 5px 15px;
-      color: $brand-dark;
-      font-weight: bold;
-
-      &.active {
-        background-color: $brand-dark;
-        color: $brand-yellow;
-      }
-      
-      &:not(.active):hover {
-        background-color: rgba(0,0,0,0.05);
-      }
-    }
-  }
 }
 
-.copyright-bar {
-  background-color: $brand-dark;
-  color: #ffffff;
-  width: 100%;
-  clear: both;         // KLJUČNO: Prepreči, da bi se element "skril" pod plavajoče elemente
-  position: relative;
-  z-index: 10;         // Postavi ga "nad" morebitne sence ali robove
-  display: block;      // Prepričaj se, da se obnaša kot blok
+.gumb-jezik {
+    text-decoration: none;
+    font-size: 0.75rem;
+    padding: 5px 15px;
+    color: $temna;
+    font-weight: bold;
 }
 
+.gumb-jezik.active {
+    background-color: $temna;
+    color: $rumena;
+}
 
+// sivi trak cist na koncu
+.spodnji-sivi-trak {
+    background-color: $temna;
+    width: 100%;
+    clear: both;
+}
 
-.testimonialsi {
-    background-color: #fff;
-    
-    .testimonial-card {
-        background: #fff;
-        border-radius: 30px; // Zelo zaobljeni robovi kot na sliki
-        padding: 40px 30px;
-        height: 100%;
+// popravek za telefon, da je vse na sredini
+@media (max-width: 767.98px) {
+    .noga-rumena .row {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); // Nežna senca
-        transition: transform 0.3s ease;
+        align-items: center;
+        text-align: center;
+    }
 
-        &:hover {
-            transform: translateY(-5px);
-        }
+    .noga-rumena .col-md-4 {
+        margin-bottom: 2rem;
+        padding: 0;
+    }
 
-        .quote {
-            font-size: 0.95rem;
-            line-height: 1.6;
-            color: #444;
-            font-style: italic;
-            margin-bottom: 30px;
-        }
+    .noga-povezave {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-        .author-info {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-
-            .hexagon-img {
-                width: 60px;
-                height: 60px;
-                background-color: #eee; // Nadomestno ozadje
-                // Ustvari šesterokotnik
-                clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-                
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
-
-            .text {
-                .name {
-                    margin: 0;
-                    font-weight: 800;
-                    font-size: 1.1rem;
-                    color: #000;
-                }
-                .location {
-                    margin: 0;
-                    font-size: 0.85rem;
-                    color: #777;
-                }
-            }
-        }
+    .noga-povezave li {
+        text-align: center;
     }
 }

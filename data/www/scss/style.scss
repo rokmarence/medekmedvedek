@@ -79,8 +79,60 @@ font-size: small;
 }
 
 
-$yellow: #fdbd33;
-$dark: #222;
+
+
+.kategorije-pill {
+    display: inline-flex;
+    border: 1.5px solid #000; 
+    border-radius: 12px;      
+    overflow: hidden;
+    background: #fff;
+    
+    
+    @media (max-width: 400px) {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .kat-btn {
+        flex: 1;
+        background: transparent;
+        border: none;
+        border-right: 1.5px solid #000;
+        
+        
+        padding: 8px 12px; 
+        font-size: 0.85rem; 
+        font-weight: 600;
+        color: #000;
+        line-height: 1.2;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        white-space: normal; 
+
+        &:last-child {
+            border-right: none;
+        }
+
+        &.active {
+            background: #000;
+            color: #fff;
+        }
+
+       
+        @media (max-width: 360px) {
+            font-size: 0.75rem;
+            padding: 6px 8px;
+        }
+    }
+}
+
+
+
+
+$rumena: #FEBB27;
+
+$temna: #262626;
 
 .card-grid {
   display: flex;
@@ -145,48 +197,218 @@ $dark: #222;
 
 
 
+// Mnenja strank (Testimonials)
 
+.mnenja-strank {
 
-.testimonial-card {
-    transition: transform 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+background-color: #fff;
 
-    &:hover {
-        transform: translateY(-8px);
-    }
-
-    .besedilo-mnenja {
-        font-size: 0.95rem;
-        line-height: 1.6;
-        color: #444;
-        font-style: italic;
-    }
-}
-
-.hex-wrapper {
-    width: 60px;
-    height: 65px;
-    background-color: #ffffff; 
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
 }
 
 
-@media (max-width: 991px) and (min-width: 768px) {
-    .col-md-6:last-child {
-        margin-top: 1.5rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.naslov-mnenja {
+
+font-weight: bold;
+
 }
 
+
+.kartica-mnenja {
+
+background: #fff;
+
+border-radius: 30px;
+
+padding: 40px 30px;
+
+height: 100%;
+
+display: flex;
+
+flex-direction: column;
+
+justify-content: space-between;
+
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+transition: transform 0.3s ease;
+
+}
+
+
+.kartica-mnenja:hover {
+
+transform: translateY(-5px);
+
+}
+
+
+.citat {
+
+font-size: 0.95rem;
+
+line-height: 1.6;
+
+color: #444;
+
+font-style: italic;
+
+margin-bottom: 30px;
+
+}
+
+
+.avtor-podatki {
+
+display: flex;
+
+align-items: center;
+
+gap: 15px;
+
+}
+
+
+.slika-sestkotnik {
+
+width: 60px;
+
+height: 60px;
+
+clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+
+}
+
+
+.slika-sestkotnik img {
+
+width: 100%;
+
+height: 100%;
+
+object-fit: cover;
+
+}
+
+
+.ime-stranke {
+
+margin: 0;
+
+font-weight: 800;
+
+}
+
+
+.drzava {
+
+margin: 0;
+
+font-size: 0.85rem;
+
+color: #777;
+
+}
+
+
+
+// Noga strani (Footer)
+
+.noga-rumena {
+
+background-color: $rumena;
+
+}
+
+
+.noga-glavni-napis {
+
+font-weight: bold;
+
+font-size: 2.8rem;
+
+color: $temna;
+
+}
+
+
+.noga-logo {
+
+height: 50px;
+
+}
+
+
+.noga-povezave li a {
+
+text-decoration: none;
+
+color: $temna;
+
+font-size: 0.85rem;
+
+font-weight: 500;
+
+line-height: 2;
+
+}
+
+
+.noga-povezave li a:hover {
+
+opacity: 0.6;
+
+}
+
+
+// Preklop jezika v nogi
+
+.izbira-jezika {
+
+border: 1px solid $temna;
+
+border-radius: 8px;
+
+overflow: hidden;
+
+}
+
+
+.gumb-jezik {
+
+text-decoration: none;
+
+font-size: 0.75rem;
+
+padding: 5px 15px;
+
+color: $temna;
+
+font-weight: bold;
+
+}
+
+
+.gumb-jezik.active {
+
+background-color: $temna;
+
+color: $rumena;
+
+}
+
+
+// sivi trak cist na koncu
+
+.spodnji-sivi-trak {
+
+background-color: $temna;
+
+width: 100%;
+
+clear: both;
+
+}
 
 
 

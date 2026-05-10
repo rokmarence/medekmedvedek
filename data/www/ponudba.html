@@ -7,25 +7,38 @@
     <title>HEADER</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html"><img src="slike/logo 1.png" alt="Logo honey"></a>
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">DOMOV</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="nasazgodba.html">NAŠA ZGODBA</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="ponudba.html">PONUDBA</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="kontakt.html">KONTAKT</a>
-        </li>
-        </ul>
-    </div>
-  </nav>
+<nav class="navbar navbar-expand-lg navigacija">
+
+<div class="container-fluid">
+
+<a class="navbar-brand" href="index.html">
+
+<img src="slike/logo 1.png" alt="Logo honey" class="logotip-glavni">
+
+</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+  <ul class="navbar-nav">
+
+    <li class="nav-item"><a class="nav-link" href="index.html">DOMOV</a></li>
+    <li class="nav-item"><a class="nav-link" href="nasazgodba.html">NAŠA ZGODBA</a></li>
+    <li class="nav-item"><a class="nav-link active" href="ponudba.html">PONUDBA</a></li>
+    <li class="nav-item"><a class="nav-link" href="kontakt.html">KONTAKT</a></li>
+
+  </ul>
+
+</div>
+
+</div>
+
+</nav>
 
   <section class="hero-banner">
 
@@ -37,6 +50,16 @@
     <div class="line"></div>
   </div>
 </section>
+
+
+<div class="kategorije-wrapper my-5 text-center">
+    <div class="kategorije-pill">
+        <button class="kat-btn active">Domači med</button>
+        <button class="kat-btn">Kremni med</button>
+        <button class="kat-btn">Medena darila</button>
+    </div>
+</div>
+
 
 
 <section class="card-grid">
@@ -115,63 +138,110 @@
 
 
 
-<section class="testimonials py-5 bg-white">
-    <div class="container">
-        <h2 class="text-center fw-bold mb-5">Testimonials</h2>
-        
-        <div class="row g-4">
-            <div class="col-lg-4 col-md-6">
-                <div class="testimonial-card h-100 shadow-sm border-0 rounded-4 p-4 bg-white">
-                    <p class="besedilo-mnenja mb-4">
-                        "I discovered Medek Medvedek while traveling through Slovenia and it was one of the highlights of my trip. The honey tastes incredibly pure and natural, unlike anything I've tried before."
-                    </p>
-                    <div class="d-flex align-items-center">
-                        <div class="hex-wrapper me-3">
-                            <img src="slike/pexels-ron-lach-7884134 1.png" alt="Armanda Kunova">
-                        </div>
-                        <div class="info">
-                            <h6 class="fw-bold mb-0">Armanda Kunova</h6>
-                            <small class="text-muted">Russia</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!--testimonialsi-->
 
-            <div class="col-lg-4 col-md-6">
-                <div class="testimonial-card h-100 shadow-sm border-0 rounded-4 p-4 bg-white">
-                    <p class="besedilo-mnenja mb-4">
-                        "Medek Medvedek je res nekaj posebnega. Okus medu je izjemen in vidi se, da je pridelan z veliko skrbjo. Odkar sem ga poskusil, drugega medu skoraj ne kupujem več."
-                    </p>
-                    <div class="d-flex align-items-center">
-                        <div class="hex-wrapper me-3">
-                            <img src="slike/pexels-prolificpeople-30004312 1.png" alt="Matej Kovač">
-                        </div>
-                        <div class="info">
-                            <h6 class="fw-bold mb-0">Matej Kovač</h6>
-                            <small class="text-muted">Slovenia</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<section class="mnenja-strank py-5">
 
-            <div class="col-lg-4 col-md-6">
-                <div class="testimonial-card h-100 shadow-sm border-0 rounded-4 p-4 bg-white">
-                    <p class="besedilo-mnenja mb-4">
-                        "Že dolgo nisem poskusil tako kakovostnega medu. Razlika v okusu je očitna takoj. Kupujem ga redno, ker vem, da dobim naraven in vrhunski izdelek."
-                    </p>
-                    <div class="d-flex align-items-center">
-                        <div class="hex-wrapper me-3">
-                            <img src="slike/pexels-pessoas-uem-503045317-16160815 1.png" alt="Petra Novak">
-                        </div>
-                        <div class="info">
-                            <h6 class="fw-bold mb-0">Petra Novak</h6>
-                            <small class="text-muted">Slovenia</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="container">
+
+<h2 class="text-center mb-5 naslov-mnenja">Testimonials</h2>
+
+<div class="row g-4 justify-content-center">
+
+<!-- Kartica 1 -->
+
+<div class="col-md-4">
+
+<div class="kartica-mnenja">
+
+<p class="citat">“I discovered Medek Medvedek while traveling through Slovenia. The honey tastes incredibly pure, unlike anything I’ve tried before. You can really feel the care and passion behind it. I even brought some home as a souvenir.”</p>
+
+<div class="avtor-podatki">
+
+<div class="slika-sestkotnik">
+
+<img src="slike/armanda.png" alt="Armanda Kunova">
+
+</div>
+
+<div class="avtor-tekst">
+
+<h6 class="ime-stranke">Armanda Kunova</h6>
+
+<p class="drzava">Russia</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Kartica 2 -->
+
+<div class="col-md-4">
+
+<div class="kartica-mnenja">
+
+<p class="citat">“Medek Medvedek je res nekaj posebnega. Okus medu je izjemen in vidi se, da je pridelan z veliko skrbjo. Odkar sem ga poskusil, drugega medu skoraj ne kupujem več.”</p>
+
+<div class="avtor-podatki">
+
+<div class="slika-sestkotnik">
+
+<img src="slike/matej.png" alt="Matej Kovač">
+
+</div>
+
+<div class="avtor-tekst">
+
+<h6 class="ime-stranke">Matej Kovač</h6>
+
+<p class="drzava">Slovenia</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Kartica 3 -->
+
+<div class="col-md-4">
+
+<div class="kartica-mnenja">
+
+<p class="citat">“Že dolgo nisem poskusil tako kakovostnega medu. Razlika v okusu je očitna takoj. Kupujem ga redno, ker vem, da dobim naraven in vrhunski izdelek.”</p>
+
+<div class="avtor-podatki">
+
+<div class="slika-sestkotnik">
+
+<img src="slike/petra.png"alt="Petra Novak">
+
+</div>
+
+<div class="avtor-tekst">
+
+<h6 class="ime-stranke">Petra Novak</h6>
+
+<p class="drzava">Slovenia</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
 

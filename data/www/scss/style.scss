@@ -1,1 +1,25 @@
+// VARIABLES
+
+$primary: #f8b51d;
+$dark: #222;
+$border-radius: 20px;
+
+
+// BOOTSTRAP
+
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+
+// CUSTOM STYLES
+
+body {
+  background: white;
+}
+
+.contact-page {
+
+  .hero {
+    min-height: 500px;
+  }
+
+}

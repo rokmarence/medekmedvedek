@@ -1,0 +1,15 @@
+$honey: #f8b51d;
+$dark: #222;
+$radius: 24px;
+
+.contact-card {
+  border-radius: $radius;
+}
+
+.bg-honey {
+  background-color: $honey;
+}
+
+.btn-dark {
+  background-color: $dark;
+}
